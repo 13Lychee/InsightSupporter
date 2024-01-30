@@ -1,4 +1,3 @@
-<div align="center">
 
 # InsightSupporter: Insight-Driven Basketball Sports Journalism Generation 
 
