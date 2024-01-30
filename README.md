@@ -1,6 +1,6 @@
 <div align="center">
 
-# **InsightSupporter: Insight-Driven Basketball Sports **Journalism Generation 
+# InsightSupporter: Insight-Driven Basketball Sports Journalism Generation 
 
 [ZJUIDG](https://zjuidg.org/), Zhejiang University
 
