@@ -22,7 +22,7 @@ To enhance the engagement and informativeness of journalism, there is an increas
 
 
 ## Term and Output
-![Frame 27](./img/Frame 27.png)
+![Frame 27](../img/Frame 27.png)
 
 
 ## News
