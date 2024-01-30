@@ -26,6 +26,10 @@ The output news and the term definition:
 
 ![image](https://github.com/13Lychee/InsightSupporter/blob/main/img/Frame%2027.png)
 
+## Workflow
+The workflow encompasses three modules: a data collection module, a sports journalism generation module, and a story editor.
+
+![image](https://github.com/13Lychee/InsightSupporter/blob/main/img/Overview_new.png)
 
 ## News
 
@@ -37,7 +41,6 @@ The output news and the term definition:
 
 - [2024/01/20] We release Front-end code.
 
-  
 
 ## TODO List
 
@@ -45,7 +48,10 @@ The output news and the term definition:
 - [x] Release Front-end code
 - [ ] Release Back-end code
 
+## Interface and Guidance
+The online story editor interface of InsightSupporter. (A) The Data View displays events extracted from insight. (B) The Episode Editor supports editing episode elements. (C) The Storyline View offers an overview of the entire news and allows for narrative structure editing. (D) The Story Visualization View presents the generated news results.
 
+![image](https://github.com/13Lychee/InsightSupporter/blob/main/img/Interface.png)
 
 ## File Structure
 
