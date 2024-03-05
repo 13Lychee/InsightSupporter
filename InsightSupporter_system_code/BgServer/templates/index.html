@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block body %}
+    <div id="setting">
+        <strong>设置</strong>
+        <hr/>
+        <form method="get">
+            <div>
+                <label for="title">标题：</label>
+                <input id="title" type="text" placeholder="请输入简报标题" name="headline">
+            </div>
+            <div>
+                <label for="date">时间：</label>
+                <input id="date" type="date" name="post_date">
+            </div>
+            <div style="display: none">
+                <label>类型：</label>
+                <input id="product" type="checkbox" value="product" name="post_type" checked>
+                <label for="product">产品</label>
+                <input id="miniapp" type="checkbox" value="miniapp" name="post_type" checked>
+                <label for="miniapp">小程序</label>
+            </div>
+            <div>
+                <input type="submit" value="生 成" class="button"/>
+            </div>
+        </form>
+    </div>
+
+    <div id="briefing">
+        <strong>{{headline}} | {{post_date}}</strong>
+        <hr/>
+
+        {% for i,posts in enumerate(postList) %}
+            {% if i == 0 %}
+                <input class="active" type="button" value="{{ post_type[i] }}"/>
+            {% else %}
+                <input type="button" value="{{ post_type[i] }}"/>
+            {% end %}
+        {% end %}
+
+        {% for i,posts in enumerate(postList) %}
+            {% if i == 0 %}
+                <div style="display:block;" class="posts">{% module Posts(posts)%}</div>
+            {% else %}
+                <div class="posts">{% module Posts(posts)%}</div>
+            {% end %}
+        {% end %}
+    </div>
+
+    <script>
+        day = new Date(new Date().setDate(new Date().getDate() - 1))
+        document.getElementById('date').valueAsDate = day;
+    </script>
+{% end %}

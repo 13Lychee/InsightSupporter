@@ -1,0 +1,143 @@
+/* global */
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #f0f3f5;
+    box-sizing: border-box;
+}
+
+a {
+    color: #2593fc;
+}
+
+strong {
+    size: 1rem;
+}
+
+hr {
+    border: 0.5px solid #000;
+    margin-top: 1rem;
+}
+  
+
+/* header */
+#header{
+    background-color: #232323;
+    margin: 0 0;
+    text-indent: 5%;
+    line-height: 4.375rem;
+    font-size: 1.25rem;
+}
+  
+#header a {
+    color: #FFF;
+    text-decoration:none;
+}
+
+/* footer */
+#footer {
+    color: #808080;
+    text-align: center;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.5rem;
+}
+
+#footer a {
+    color: #808080;
+}
+  
+#footer a:hover {
+    color: #000;
+    text-decoration:underline;
+}
+
+/* content */
+#content {
+    min-height: 82%;
+}
+
+#setting, #briefing {
+    margin: 1% 5%;
+    padding: 2%;
+    background-color: #fff;
+}
+
+form {
+    font-size: 0.875rem;
+}
+
+form div {
+    padding: 1rem 0 0;
+}
+
+#setting input[type=text],input[type=date] {
+    width: 11rem;
+    height: 2rem;
+    border: 1px solid rgba(198,204,214,1);
+    outline-style: none;
+    font-size: 0.875rem;
+    text-indent: 0.5rem;
+}
+
+#setting input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(198,204,214,1);
+    font-size: 0.875rem;
+    text-indent: 0.5rem;
+}
+#setting input[type=text]::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(198,204,214,1);
+    font-size: 0.875rem;
+}
+#setting input[type=text]:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(198,204,214,1);
+    font-size: 0.875rem;
+  }
+#setting input[type=text]:-moz-placeholder { /* Firefox 18- */
+    color: rgba(198,204,214,1);
+    font-size: 0.875rem;
+}
+
+#setting input[type=submit] {
+    background-color: #2593fc;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+#setting input[type=checkbox] {
+    margin: 0;
+}
+
+#briefing .posts {
+    display: none;
+    font-size: 0.875rem;
+    margin: 0 7rem;
+    position: relative;
+    top: -4.5rem;
+}
+
+#briefing input {
+    font-size: 0.875rem;
+    border: none;
+    border-right: 2px solid #ddd;
+    display: block;
+    width: 5rem;
+    padding: 1rem 0;
+    outline: none;
+    position: relative;
+    top: 2rem; 
+}
+
+#briefing .active {
+    color: #2593fc;
+    border-right: 2px solid #2593fc;
+}
+
+.post span {
+    display: block;
+    padding: 0.4rem 0 0;
+}

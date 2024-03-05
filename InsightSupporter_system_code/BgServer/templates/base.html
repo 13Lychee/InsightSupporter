@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139711766-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+
+        gtag("config", "UA-139711766-2");
+    </script>
+    {% block title %}<title>briefing generator</title>{% end %}
+    <link rel="shortcut icon" href="{{static_url('images/favicon.ico')}}">
+    <!-- css -->
+    <link rel="stylesheet" href="{{static_url('style.css')}}">
+    <!-- javascripy -->
+    <script src="{{static_url('main.js')}}"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="/">简报生成器</a>
+    </div>
+    <div id="content">
+        {% block body %}{% end %}
+    </div>
+    <div id="footer">
+        Copyright &copy; 2019 HuaxinLab. <a href="https://acusp.info" target="_blank">Acusp</a>  
+        and <a href="https://qmisky.github.io" target="_blank">Misky</a> Product
+    </div>
+</body>
+</html>
