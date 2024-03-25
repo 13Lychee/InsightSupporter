@@ -5,19 +5,19 @@
 
 ## Introduction
 
-We have developed a system, InsightSupporter, for the interaction bewteen users, templates, and ChatGPT. The system allows users to modify the orders of episode and the configuration of visualizations. InsightSupporter regards the user input as an information and logic source instead of a visualization command, allowing for interactive editing and logical interpolation by the user, thus making the generated content of the model controllable. In summary, the primary contributions are as follows.
+We have developed a system, SNIL, for the interaction bewteen users, templates, and ChatGPT. The system allows users to modify the orders of episode and the configuration of visualizations. SNIL regards the user input as an information and logic source instead of a visualization command, allowing for interactive editing and logical interpolation by the user, thus making the generated content of the model controllable. In summary, the primary contributions are as follows.
 
 *•* A preliminary study that reviews 120 selected sports news and summarizes design considerations for the generation.
 
 *•* A workflow that enables the automatic generation of the whole article based on user insight.
 
-*•* A system, InsightSupporter, that supports human-machine cooperative generation of basketball news.
+*•* A system, SNIL, that supports human-machine cooperative generation of basketball news.
 
 *•* A user studies that validate the utility and application scenarios of the proposed workflow.
 
 ## Abstract
 
-To enhance the engagement and informativeness of journalism, there is an increasing reliance on data analysis techniques and visualizations, which poses a high demand on journalists’ abilities. While numerous visual analytics systems have been developed for deriving insights, few tools specifically cater to support and disseminate viewpoints for journalism production. Thus, this work aims to facilitate the automatic creation of sports journalism from the insights expressed by natural languages. To achieve this, we conducted an extensive preliminary study on the published sports news. Based on our findings, we propose a workflow - 1) exploring the data space behind insights, 2) generating narrative structures, 3) progressively generating each episode, and 4) mapping data spaces into communicative visualizations. To customize journalism, we have implemented a human-AI interaction system called InsightSupporter, which incorporates user input in conjunction with ChatGPT [1], utilizing an atomized approach to modify the textual and graphical contents within the episode-based structure. We conduct user studies to demonstrate the usability of InsightSupporter and the benefit of bridging the gap between analysis tasks and communicative tasks through expert and fan feedback.
+To enhance the engagement and informativeness of journalism, there is an increasing reliance on data analysis techniques and visualizations, which poses a high demand on journalists’ abilities. While numerous visual analytics systems have been developed for deriving insights, few tools specifically cater to support and disseminate viewpoints for journalism production. Thus, this work aims to facilitate the automatic creation of sports journalism from the insights expressed by natural languages. To achieve this, we conducted an extensive preliminary study on the published sports news. Based on our findings, we propose a workflow - 1) exploring the data space behind insights, 2) generating narrative structures, 3) progressively generating each episode, and 4) mapping data spaces into communicative visualizations. To customize journalism, we have implemented a human-AI interaction system called SNIL, which incorporates user input in conjunction with LLMs, utilizing an atomized approach to modify the textual and graphical contents within the episode-based structure. We conduct user studies to demonstrate the usability of SNIL and the benefit of bridging the gap between analysis tasks and communicative tasks through expert and fan feedback.
 
 
 
@@ -49,7 +49,7 @@ The workflow encompasses three modules: a data collection module, a sports journ
 - [ ] Release Back-end code
 
 ## Interface and Guidance
-The online story editor interface of InsightSupporter. (A) The Data View displays events extracted from insight. (B) The Episode Editor supports editing episode elements. (C) The Storyline View offers an overview of the entire news and allows for narrative structure editing. (D) The Story Visualization View presents the generated news results.
+The online story editor interface of SNIL. (A) The Data View displays events extracted from insight. (B) The Episode Editor supports editing episode elements. (C) The Storyline View offers an overview of the entire news and allows for narrative structure editing. (D) The Story Visualization View presents the generated news results.
 
 ![image](https://github.com/13Lychee/InsightSupporter/blob/main/img/Interface.png)
 
