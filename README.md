@@ -1,5 +1,5 @@
 
-# InsightSupporter: Insight-Driven Basketball Sports Journalism Generation 
+# SNIL: Generating Sports News from Insights with Large Language Models
 
 [ZJUIDG](https://zjuidg.org/), Zhejiang University
 
